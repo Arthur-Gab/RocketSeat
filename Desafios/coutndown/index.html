@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CountDown</title>
+
+    <link rel="stylesheet" href="/assets/css/normalize.css" />
+    <link rel="stylesheet" href="/assets/css/style.css" />
+
+    <!-- Contagem regressiva -->
+    <script src="/assets/js/countdown.js" defer></script>
+
+    <!-- Modal -->
+    <script src="assets/js/modal.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="countdown">
+        <div class="countdown--title">
+          <h1>READY TO LAUNCH IN...</h1>
+        </div>
+        <div class="countdown--time">
+          <div class="countdown--values">
+            <p class="countdown--name">Dias</p>
+            <p class="countdown--data" id="countdown-day">10</p>
+          </div>
+
+          <div class="countdown--colon">
+            <p class="countdown--data">:</p>
+          </div>
+
+          <div class="coutndown--values">
+            <p class="countdown--name">Horas</p>
+            <p class="countdown--data" id="countdown-hours">00</p>
+          </div>
+
+          <div class="countdown--colon">
+            <p class="countdown--data">:</p>
+          </div>
+
+          <div class="coutndown--values">
+            <p class="countdown--name">Minutos</p>
+            <p class="countdown--data" id="countdown-minutes">00</p>
+          </div>
+
+          <div class="countdown--colon">
+            <p class="countdown--data">:</p>
+          </div>
+
+          <div class="coutndown--values">
+            <p class="countdown--name">Segundos</p>
+            <p class="countdown--data" id="countdown-seconds">00</p>
+          </div>
+        </div>
+        <div class="countdown--name">
+          Inscreva-se para saber mais sobre o lançamento
+        </div>
+
+        <div class="countdown--aplly">
+          <button class="button" id="openModal" type="button">
+            Inscreva-se
+          </button>
+        </div>
+      </div>
+
+      <div id="modalWrapper">
+        <div id="modal">
+          <form>
+            <label for="name">Nome:</label>
+            <input type="text" id="name" name="name" required />
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required />
+
+            <input type="submit" value="Enviar" />
+          </form>
+          <button id="closeModal">
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
