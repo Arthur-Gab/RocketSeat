@@ -1,4 +1,7 @@
 // Define a data de término da contagem regressiva (10 dias a partir de agora)
+// 24 (horas) * 60 (minutos) * 60 (segundos), essa operação forma um dia então basta multiplicar pela quantidade de dias
+// desejadas, no caso 10, resultando no valor 864000
+// a multiplicação por 1000 é para transoformar o valor em milissegundos que é o pedido no getTime()
 var countDownDate = new Date().getTime() + 864000 * 1000;
 
 // Atualiza a contagem regressiva a cada segundo
